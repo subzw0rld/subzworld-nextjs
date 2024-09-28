@@ -1,0 +1,9 @@
+.subzworld-header, ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.navigation {
+    padding: 1rem 0;
+    padding-left: 1rem;
+}
