@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/components/Header/header";
+import { Header } from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Subzworld",
@@ -16,16 +17,21 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body >
+      <body>
         <Header />
-        {children}</body>
-        <footer></footer>
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
