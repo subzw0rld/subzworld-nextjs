@@ -51,7 +51,7 @@ export default function Home() {
           <li>Telecom</li>
         </ul>
         ... and many more.
-        <p>
+        <p className="page-break">
           Also I got the opportunity to work for multiple esteemed organisations
           including:
         </p>
@@ -75,15 +75,15 @@ export default function Home() {
         <blockquote>
           <h2>Hobbies</h2>
         </blockquote>
-        <p className="page-break">
+        <p>
           Apart from my professional life, I have my hobbies to maintain my
           sanity. I am an amateur landscape photographer and I love to travel
           and explore new places (Check my Insta profile for my travelogues). I
           am also a foodie and love to try different cuisines.
         </p>
         <p>
-          During my free time and also when I am not travelling I prefer to
-          checout Youtube and other articles related to technology and
+          During my free time and also when I am not traveling, I prefer to
+          check out YouTube and other articles related to technology and
           scientific breakthroughs.
         </p>
       </section>
