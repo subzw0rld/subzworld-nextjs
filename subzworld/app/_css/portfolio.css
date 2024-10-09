@@ -1,0 +1,191 @@
+.portfolio-banner {
+    --translucent-grey: rgba(234, 234, 234, 0.3);
+    border-top: 1px solid var(--translucent-grey);
+    border-bottom: 1px solid var(--translucent-grey);
+    display: flex;
+    height: 150px;
+}
+.portfolio-banner .grid-container {
+    display: grid;
+    grid-template-columns: repeat(20, 50px);
+    grid-template-rows: repeat(3, 50px);
+}
+
+.grid-item {
+    padding: 0.1rem;
+}
+
+/* .grid-item:nth-child(odd) {
+    background-color: var(--translucent-grey);
+} */
+
+.angular-logo {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.amplify-logo {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.codecommit-logo {
+    grid-row: 2;
+    grid-column: 20;
+}
+
+.cognito-logo {
+    grid-row: 1;
+    grid-column: 15;
+}
+
+.aws-logo {
+    grid-row: 2;
+    grid-column: 9;
+}
+
+.contentful-logo {
+    grid-row: 3;
+    grid-column: 8;
+}
+
+/* .express-logo {
+    grid-row: 3;
+    grid-column: 6;
+} */
+
+.agile-logo {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.mongo-logo {
+    grid-row: 3;
+    grid-column: 6;
+}
+
+.redis-logo {
+    grid-row: 2;
+    grid-column: 6;
+}
+
+.aem-logo {
+    grid-row: 1;
+    grid-column: 20;
+}
+
+.magento-logo {
+    grid-row: 3;
+    grid-column: 13 / 17;
+}
+
+.node-logo {
+    grid-row: 2;
+    grid-column: 15;
+}
+
+.uml-logo {
+    grid-row: 3;
+    grid-column: 20;
+}
+
+.sfcc-logo {
+    grid-row: 1;
+    grid-column: 12;
+}
+
+.spring-logo {
+    grid-row: 1;
+    grid-column: 18;
+}
+
+.python-logo {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.banking {
+    grid-row: 2;
+    grid-column: 11 / 13;
+}
+
+.e-commerce {
+    grid-row: 1;
+    grid-column: 8 / 11;
+}
+
+.aviation {
+    grid-row: 3;
+    grid-column: 3 / 5;
+}
+
+.solution {
+    grid-row: 1;
+    grid-column: 2 / 7;
+}
+
+.simulation {
+    grid-row: 3;
+    grid-column: 10 / 13;
+}
+
+.product-owner {
+    grid-row: 2;
+    grid-column: 16 / 20;
+}
+
+.delivery-head {
+    grid-row: 3;
+    grid-column: 17 / 20;
+}
+
+.right-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.airbus-logo, .aws-logo {
+    background-color: var(--translucent-grey);
+    padding: 0 0.2rem;
+}
+
+.epo {
+    grid-row: 1;
+    grid-column: 6 / 8;
+}
+
+.boi {
+    grid-row: 1;
+    grid-column: 9 / 11;
+}
+
+.abfrl {
+    grid-row: 2 / 4;
+    grid-column: 1 / 3;
+}
+
+.lv {
+    grid-row: 2 / 4;
+    grid-column: 3 / 5;
+}
+
+.mns {
+    grid-row: 2 / 4;
+    grid-column: 5 / 7;
+}
+
+.taj {
+    grid-row: 2 / 4;
+    grid-column: 7 / 9;
+}
+
+.syd {
+    grid-row: 2 / 4;
+    grid-column: 9 / 11;
+}
+
+.portfolio-heading {
+    padding: 0.75rem 0;
+}

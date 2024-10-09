@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { Header } from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Header } from "@/components/Header";
+import type { Metadata } from "next";
+import "./_css/globals.css";
+import "./_css/util.css";
 
 export const metadata: Metadata = {
   title: "Subzworld",

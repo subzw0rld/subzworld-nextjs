@@ -1,0 +1,43 @@
+.flex {
+  display: flex;
+}
+
+.center, .horizontal-center, .vertical-center {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal-center {
+  justify-content: center;
+}
+
+.vertical-center {
+  align-items: center;
+}
+
+.direction-vertical {
+  flex-direction: column;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.default-list {
+  display: block;
+  list-style-type: disc;
+  padding: 1rem;
+}
+
+.padding-top-bottom-1rem {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

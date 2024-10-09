@@ -1,3 +1,7 @@
+.subzworld-header {
+    width: 100vw;
+}
+
 .subzworld-header ul {
     display: flex;
     gap: 1rem;

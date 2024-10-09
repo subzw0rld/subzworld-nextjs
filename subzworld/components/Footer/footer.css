@@ -1,0 +1,41 @@
+.footer-container {
+    --border-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--background);
+    border-top: 1px solid var(--border-color);
+    display: grid;
+    grid-template-columns: 1.5rem 1fr 1.5rem;
+    grid-template-rows: repeat(5, 1fr);
+    z-index: 10;
+}
+
+.footer-container p {
+    padding-left: 0;
+}
+
+.footer-section {
+    grid-row: 5;
+    font-size: 0.6rem;
+}
+
+.footer-section, .social-media {
+    grid-column: 2;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-media a > img {
+    display: block;
+    width: 16px;
+    height: 20px;
+}
+
+.social-media a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.625rem;
+}

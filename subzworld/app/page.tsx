@@ -1,5 +1,5 @@
 import HeroBanner from "@/components/HeroBanner";
-import "./homepage.css";
+import "./_css/homepage.css";
 
 /**
  * Home component renders the main landing page of the application.
