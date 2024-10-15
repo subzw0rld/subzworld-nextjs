@@ -27,6 +27,7 @@ export type HeaderItem = {
 const headerItems: HeaderItem[] = [
     { title: 'About', link: URL_CONFIG.ABOUT },
     { title: 'Portfolio', link: URL_CONFIG.PORTFOLIO },
+    { title: 'Blog', link: URL_CONFIG.BLOG },
     { title: 'Connect', link: URL_CONFIG.CONTACT },
 ];
 

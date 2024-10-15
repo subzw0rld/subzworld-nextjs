@@ -20,7 +20,12 @@
 }
 
 .direction-vertical {
+  display: flex;
   flex-direction: column;
+}
+
+.col-count-2 {
+  column-count: 2;
 }
 
 .uppercase {

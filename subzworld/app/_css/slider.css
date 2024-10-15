@@ -1,0 +1,47 @@
+.slider {
+    --speed: 10s;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+
+.slider-item-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+  
+  .slider-item {
+    width: 300px;
+    position: absolute;
+    height: 100%;
+    left: 100%;
+    animation: autoRun var(--speed) linear infinite;
+    transition: filter 0.5s;
+    animation-delay: calc((var(--speed) / var(--quantity)) * (var(--position) - 1) - 10s) !important;
+  }
+  
+  .slider-item img {
+    padding: 0.1rem;
+  }
+  
+  @keyframes autoRun {
+    from {
+      left: 100%;
+    }
+    to {
+      left: calc(100vw * -1);
+    }
+  }
+
+  .reverse .slider-item {
+    animation: autoRunReverse var(--speed) linear infinite;
+  }
+
+  @keyframes autoRunReverse{
+    from{
+        left: calc(100vw * -1);
+    }to{
+        left: 100%;
+    }
+}

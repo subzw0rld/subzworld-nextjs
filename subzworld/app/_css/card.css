@@ -16,6 +16,7 @@
     border-left: 1px solid var(--border-color);
     flex: 0 0 100%;
     flex-wrap: wrap;
+    padding-left: 0.5rem;
 }
 
 /* .card:first-child, .card:last-child {
@@ -33,6 +34,10 @@
     width: 150px;
     height: fit-content;
 }
+
+/* .card p {
+    max-width: 400px;
+} */
 
 .title {
     position: relative;

@@ -1,7 +1,7 @@
-type PortfolioItem = { leftbanner: Array<{}>; rightbanner: Array<{}> };
+type PortfolioItem = { specialisation: Array<{}>; clients: Array<{}> };
 
 const PortfolioModel: PortfolioItem = {
-  leftbanner: [
+  specialisation: [
     {
       type: "image",
       src: "/images/nextjs.svg",
@@ -124,7 +124,7 @@ const PortfolioModel: PortfolioItem = {
     },
     {
       type: "text",
-      label: "web/mobile solutioning",
+      label: "Micro-Frontend solution",
       className: "solution",
     },
     {
@@ -143,27 +143,27 @@ const PortfolioModel: PortfolioItem = {
       className: "delivery-head",
     },
   ],
-  rightbanner: [
+  clients: [
     {
       type: "image",
       src: "/images/airbus.svg",
       info: "Airbus logo",
       className: "airbus-logo",
-      dim: {width: "100", height: "100"}
+      dim: {width: "200", height: "80"}
     },
     {
       type: "image",
       src: "/images/coca-cola.svg",
       info: "Coca-Cola logo",
       className: "coke-logo",
-      dim: {width: "100", height: "100"}
+      dim: {width: "50", height: "50"}
     },
     {
       type: "image",
       src: "/images/telefonica.svg",
       info: "Telefonica logo",
       className: "telefonica-logo",
-      dim: {width: "100", height: "100"}
+      dim: {width: "50", height: "50"}
     },
     {
       type: "text",
