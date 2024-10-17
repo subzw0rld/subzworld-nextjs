@@ -1,0 +1,52 @@
+.portfolio-page {
+  --translucent-grey: rgba(234, 234, 234, 0.3);
+}
+
+.portfolio-page li, p {
+    line-height: 2;
+}
+
+.portfolio-banner {
+  border-top: 1px solid var(--translucent-grey);
+  border-bottom: 1px solid var(--translucent-grey);
+  display: flex;
+  height: 75px;
+  width: 100%;
+}
+
+.portfolio-heading {
+  padding: 0.75rem 0;
+}
+
+.resume-container {
+  display: flex;
+  position: relative;
+  padding: 1rem;
+  background-color: var(--background);
+  border: 1px solid var(--translucent-grey);
+}
+
+.resume-container a {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.resume-container a span {
+  text-align: left;
+}
+
+@media screen and (min-width: 960px) {
+  .resume-container {
+    position: fixed;
+    max-width: 120px;
+    top: 50%;
+    right: 30px;
+  }
+}
+
+.airbus-logo::before {
+    background-color: white;
+    content: "";
+    position: absolute;
+    inset: 0;
+}

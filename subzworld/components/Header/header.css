@@ -1,0 +1,31 @@
+/* .subzworld-header {
+    width: 100vw;
+} */
+
+.subzworld-header ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.navigation {
+    padding-left: 1.5rem;
+}
+
+.navigation li {
+    padding: 1rem 0.3rem;
+}
+
+.active {
+    color: var(--background);
+    position: relative;
+}
+
+.active::before {
+    content: "";
+    border-radius: 3px;
+    background: var(--foreground);
+    filter: blur(0.5px);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
