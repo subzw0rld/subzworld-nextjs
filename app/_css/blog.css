@@ -1,0 +1,22 @@
+.blog-page {
+    --translucent-grey: rgba(234, 234, 234, 0.3);
+    
+}
+
+.topic-list, .blog-content {
+    padding: 1rem;
+}
+
+.topic-list {
+    border: 1px solid var(--translucent-grey);
+}
+
+/* .blog-content {
+    
+} */
+
+@media only screen and (min-width: 960px) {
+    .blog-page {
+        grid-template-columns: min(400px, 100%) 1fr;
+    }
+}

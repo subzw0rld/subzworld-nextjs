@@ -1,99 +1,117 @@
 "use client";
-import React from "react";
-
 import PortfolioModel from "@/helper/model/portfolio.model";
 import Image from "next/image";
-import "../_css/card.css";
+import React from "react";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "../_css/portfolio.css";
-import "../_css/slider.css";
 
 const PortfolioPage: React.FC = () => {
-  // const sectionRef = useRef(null);
-  // const triggerRef = useRef(null);
-  // gsap.registerPlugin(ScrollTrigger);
-
-  // useEffect(() => {
-  //   const pin = gsap.fromTo(
-  //     sectionRef.current,
-  //     {
-  //       translateX: 0,
-  //     },
-  //     {
-  //       translateX: "-500vw",
-  //       ease: "none",
-  //       duration: 1,
-  //       scrollTrigger: {
-  //         trigger: triggerRef.current,
-  //         start: "top top",
-  //         end: "300 top",
-  //         scrub: 0.6,
-  //         pin: true,
-  //       },
-  //     }
-  //   );
-  //   return () => {
-  //     {
-  //       /* A return function for killing the animation on component unmount */
-  //     }
-  //     pin.kill();
-  //   };
-  // }, []);
-
   return (
     <div className="portfolio-page page">
       <section className="section-container">
-        <div className="portfolio-banner slider" style={{"--speed": "50s"} as React.CSSProperties}>
-          <div className={`slider-item-container`} style={{"--quantity": PortfolioModel.specialisation.length} as React.CSSProperties}>
-            {PortfolioModel.specialisation.map((item: any, index: number) => {
-              return item.type === "image" ? (
-                <div className="slider-item center" style={{ "--position": index } as React.CSSProperties} key={item.src}>
-                  <Image
-                    src={item.src}
-                    width={item.dim.width}
-                    height={item.dim.height}
-                    className={`${item.className}`}
-                    alt={item.info}
-                    title={item.info}
-                  />
-                </div>
-              ) : (
-                <div
-                  key={item.label}
-                  className={`slider-item uppercase center ${item.className}`} style={{ "--position": index } as React.CSSProperties}
-                >
-                  {item.label}
-                </div>
-              );
-            })}
+        <div
+          className="portfolio-banner"
+          style={{ "--speed": "50s" } as React.CSSProperties}
+        >
+          <div
+            className={`forward slider-item-container`}
+            style={
+              {
+                "--quantity": PortfolioModel.specialisation.length,
+              } as React.CSSProperties
+            }
+          >
+            <Swiper
+              centeredSlides={true}
+              speed={1000}
+              slidesPerView={3}
+              autoplay={{ delay: 5500, disableOnInteraction: false }}
+              pagination={false}
+              navigation={false}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
+              {PortfolioModel.specialisation.map((item: any, index: number) => {
+                return item.type === "image" ? (
+                  <SwiperSlide key={item.src}>
+                    <Image
+                      src={item.src}
+                      width={item.dim.width}
+                      height={item.dim.height}
+                      className={`${item.className}`}
+                      alt={item.info}
+                      title={item.info}
+                    />
+                  </SwiperSlide>
+                ) : (
+                  <SwiperSlide
+                    key={item.label}
+                    className={`uppercase center ${item.className}`}
+                  >
+                    {item.label}
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
         </div>
-        <div className="portfolio-banner slider reverse" style={{"--speed": "20s"} as React.CSSProperties}>
-        <div className={`slider-item-container`} style={{"--quantity": PortfolioModel.clients.length} as React.CSSProperties}>
-          {PortfolioModel.clients.map((item: any, index: number) => {
-            return item.type === "image" ? (
-              <div className="slider-item center" style={{ "--position": index } as React.CSSProperties} key={item.src}>
-                <Image
-                  src={item.src}
-                  width={item.dim.width}
-                  height={item.dim.height}
-                  className={`${item.className}`}
-                  alt={item.info}
-                  title={item.info}
-                />
-              </div>
-            ) : (
-              <div
-                key={item.label}
-                className={`slider-item uppercase center ${item.className}`} style={{ "--position": index } as React.CSSProperties}
-              >
-                {item.label}
-              </div>
-            );
-          })}
+        <div
+          className="portfolio-banner slider reverse"
+          style={{ "--speed": "20s" } as React.CSSProperties}
+        >
+          <div
+            className={`slider-item-container`}
+            style={
+              {
+                "--quantity": PortfolioModel.clients.length,
+              } as React.CSSProperties
+            }
+          >
+            <Swiper
+              dir="rtl"
+              centeredSlides={true}
+              speed={1000}
+              slidesPerView={3}
+              autoplay={{ delay: 5500, disableOnInteraction: false }}
+              pagination={false}
+              navigation={false}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
+              {PortfolioModel.clients.map((item: any, index: number) => {
+                return item.type === "image" ? (
+                  <SwiperSlide
+                    style={{ "--position": index } as React.CSSProperties}
+                    key={item.src}
+                  >
+                    <Image
+                      src={item.src}
+                      width={item.dim.width}
+                      height={item.dim.height}
+                      className={`${item.className}`}
+                      alt={item.info}
+                      title={item.info}
+                    />
+                  </SwiperSlide>
+                ) : (
+                  <SwiperSlide
+                    key={item.label}
+                    className={`uppercase center ${item.className}`}
+                    style={{ "--position": index } as React.CSSProperties}
+                  >
+                    {item.label}
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
+        </div>
 
-        </div>
-        </div>
-        
         {/* <div className="portfolio-heading center">
           <h1>My Portfolio</h1>
         </div> */}

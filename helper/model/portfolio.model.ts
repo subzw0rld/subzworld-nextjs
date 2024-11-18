@@ -149,21 +149,21 @@ const PortfolioModel: PortfolioItem = {
       src: "/images/airbus.svg",
       info: "Airbus logo",
       className: "airbus-logo",
-      dim: {width: "200", height: "80"}
+      dim: {width: "200", height: "75"}
     },
     {
       type: "image",
       src: "/images/coca-cola.svg",
       info: "Coca-Cola logo",
       className: "coke-logo",
-      dim: {width: "50", height: "50"}
+      dim: {width: "75", height: "75"}
     },
     {
       type: "image",
       src: "/images/telefonica.svg",
       info: "Telefonica logo",
       className: "telefonica-logo",
-      dim: {width: "50", height: "50"}
+      dim: {width: "75", height: "75"}
     },
     {
       type: "text",

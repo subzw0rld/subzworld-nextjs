@@ -10,8 +10,16 @@
   border-top: 1px solid var(--translucent-grey);
   border-bottom: 1px solid var(--translucent-grey);
   display: flex;
-  height: 75px;
+  height: 150px;
   width: 100%;
+  font-size: 0.625rem;
+}
+
+@media screen and (min-width: 960px) {
+  .portfolio-banner {
+    font-size: 1rem;
+  }
+  
 }
 
 .portfolio-heading {
@@ -49,4 +57,23 @@
     content: "";
     position: absolute;
     inset: 0;
+}
+
+.swiper {
+  width: 90vw;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  height: 150px;
 }

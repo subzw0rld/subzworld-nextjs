@@ -12,7 +12,7 @@
 }
 
 .navigation li {
-    padding: 1rem 0.3rem;
+    padding: 1rem;
 }
 
 .active {
@@ -28,4 +28,11 @@
     position: absolute;
     inset: 0;
     z-index: -1;
+}
+
+@media only screen and (min-width: 960px) {
+    .navigation li {
+        padding: 1rem 0.5rem;
+    }
+    
 }
