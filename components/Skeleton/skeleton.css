@@ -1,0 +1,16 @@
+.skeleton {
+    --background-color: #f5f5f5;
+    --border-radius: 8px;
+}
+
+.skeleton-outer {
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+.skeleton-inner {
+    background-color: var(--background-color);
+    position: absolute;
+    inset: 0;
+    /* animation: skeleton-loading 1.5s infinite; */
+}

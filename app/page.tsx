@@ -1,4 +1,6 @@
+"use client";
 import HeroBanner from "@/components/HeroBanner";
+import { useInView } from "react-intersection-observer";
 import "./_css/homepage.css";
 
 /**
@@ -13,12 +15,17 @@ import "./_css/homepage.css";
  */
 
 export default function Home() {
+  const { ref, inView, entry } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   return (
     <div className="home-page page">
       <HeroBanner
         title="Welcome to Subzworld!"
-        backgroundImage="/images/banner.jpg"
-        mobileImage="/images/mobile-banner.jpg"
+        backgroundImage="/images/banner.webp"
+        mobileImage="/images/mobile-banner.webp"
       />
       <section className="section-container">
         <blockquote>
@@ -51,41 +58,51 @@ export default function Home() {
           <li>Telecom</li>
         </ul>
         ... and many more.
-        <p className="page-break">
-          Also I got the opportunity to work for multiple esteemed organisations
-          including:
-        </p>
-        <ul className="default-list">
-          <li>Tech Mahindra</li>
-          <li>Publicis.Sapient</li>
-          <li>Sopra Steria</li>
-          <li>Tata Interactive Services</li>
-        </ul>
-        ... and many more.
-        <p className="page-break">
-          Being a nerd I like to work on different technologies and frameworks
-          and keep myself updated with the latest trends in technology.
-          Currently I am heavily invested in delivering projects using Next.js
-          and React.
-        </p>
-        <p>
-          Apart from project delivery I also have almost a decade long Pre-Sales
-          experience and have been involved in mutliple critical RFPs.
-        </p>
-        <blockquote>
-          <h2>Hobbies</h2>
-        </blockquote>
-        <p>
-          Apart from my professional life, I have my hobbies to maintain my
-          sanity. I am an amateur landscape photographer and I love to travel
-          and explore new places (Check my Insta profile for my travelogues). I
-          am also a foodie and love to try different cuisines.
-        </p>
-        <p>
-          During my free time and also when I am not traveling, I prefer to
-          check out YouTube and other articles related to technology and
-          scientific breakthroughs.
-        </p>
+        <div ref={ref}>
+          {inView ? (
+            <>
+              <p className="page-break">
+                Also I got the opportunity to work for multiple esteemed
+                organisations including:
+              </p>
+              <ul className="default-list">
+                <li>Tech Mahindra</li>
+                <li>Publicis.Sapient</li>
+                <li>Sopra Steria</li>
+                <li>Tata Interactive Services</li>
+              </ul>
+              ... and many more.
+              <p className="page-break">
+                Being a nerd I like to work on different technologies and
+                frameworks and keep myself updated with the latest trends in
+                technology. Currently I am heavily invested in delivering
+                projects using Next.js and React.
+              </p>
+              <p>
+                Apart from project delivery I also have almost a decade long
+                Pre-Sales experience and have been involved in mutliple critical
+                RFPs.
+              </p>
+              <blockquote>
+                <h2>Hobbies</h2>
+              </blockquote>
+              <p>
+                Apart from my professional life, I have my hobbies to maintain
+                my sanity. I am an amateur landscape photographer and I love to
+                travel and explore new places (Check my Insta profile for my
+                travelogues). I am also a foodie and love to try different
+                cuisines.
+              </p>
+              <p>
+                During my free time and also when I am not traveling, I prefer
+                to check out YouTube and other articles related to technology
+                and scientific breakthroughs.
+              </p>
+            </>
+          ) : (
+            <></>
+          )}
+        </div>
       </section>
     </div>
   );
