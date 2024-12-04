@@ -1,5 +1,4 @@
 "use client";
-import useBreakpoint from "@/hooks/breakpoint";
 import Image from "next/image";
 import React from "react";
 import "./hero-banner.css";
@@ -20,11 +19,11 @@ interface HeroBannerProps {
  * @returns {JSX.Element} The rendered HeroBanner component
  */
 const HeroBanner: React.FC<HeroBannerProps> = ({ title, backgroundImage, mobileImage }) => {
-  const isMobile = useBreakpoint();
+  // const isMobile = useBreakpoint();
 
   return (
     <div className="hero-banner">
-      {/* <picture>
+      <picture>
       <source media="(max-width: 960px)" srcSet={mobileImage} width={1000} height={1250} />
         <Image
           src={backgroundImage}
@@ -36,8 +35,8 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ title, backgroundImage, mobileI
           blurDataURL="/images/banner-placeholder.png"
           placeholder="blur"
         />
-      </picture> */}
-      <Image src={isMobile ? mobileImage : backgroundImage} alt={title} width={isMobile ? 1000 : 2880} height={ isMobile? 1250 : 433} layout="responsive" priority />
+      </picture>
+      {/* <Image src={isMobile ? mobileImage : backgroundImage} alt={title} width={isMobile ? 1000 : 2880} height={ isMobile? 1250 : 433} layout="responsive" priority /> */}
       <h1>{title}</h1>
     </div>
   );
