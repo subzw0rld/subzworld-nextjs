@@ -6,7 +6,7 @@ import "./_css/util.css";
 
 export const metadata: Metadata = {
   title: "Subzworld",
-  description: "Welcome to Subzworld! My personal website",
+  description: "Subroto | 24‑year IT veteran; Full‑Stack & Headless Commerce; Next.js & React; pre‑sales & RFP specialist.",
 };
 
 export default function RootLayout({

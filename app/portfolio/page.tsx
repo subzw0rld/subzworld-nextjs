@@ -340,24 +340,23 @@ const PortfolioPage: React.FC = () => {
             <h2>My Specialisation</h2>
           </blockquote>
           <p>
-            In my career I have always been a risk taker and have been very
-            proactive in taking challenges. This has made me very versatile and
-            has helped in gaining specialisation in the following areas:
+            Over the past 24 years, I’ve worn many hats — from building web portals in the early 2000s to 
+            leading complex headless commerce transformations across continents. This has made me very 
+            versatile and has helped in gaining specialisation in the following areas:
           </p>
           <ul className="default-list">
-            <li>Working with Cutting-Edge Technologies</li>
-            <li>Working in an extremly fast paced environments</li>
+            <li>Hands-on with modern frameworks like Next.js, React, SFCC, and headless commerce stacks.</li>
+            <li>Thriving in high-pressure, fast-moving delivery environments.</li>
             <li>
-              Working on critical projects (I have successfully resurfaced many
-              projects from deep waters)
+              Rescued and delivered high-risk, delayed projects under tight deadlines.
             </li>
-            <li>Client Communication</li>
-            <li>Pre-Sales</li>
+            <li>Directly managed client relationships — from daily syncs to strategic discussions.</li>
+            <li>Led pre-sales efforts and RFPs for enterprise clients across multiple verticals.</li>
             <li>
-              Handling large teams - I have handled teams of more{" "}
+              Led cross-functional teams of{" "}
               <strong>40+</strong>
-              technologists and at present I am handling a team of{" "}
-              <strong>80+</strong> tech specialists.
+              currently managing{" "}
+              <strong>200+ </strong> engineers and specialists.
             </li>
           </ul>
         </div>
@@ -367,37 +366,30 @@ const PortfolioPage: React.FC = () => {
           </blockquote>
           <ul className="default-list">
             <li>
-              I never hold back or become intimidated with complex and
-              challenging tasks. I get bored without them.
+               I never hold back or become intimidated with complex and challenging tasks. I get bored without them.
             </li>
             <li>
-              I can work in any kind of industry (I have provided solutions for
-              Hospitality, E-Commerce/Marketplace, Banking, Telecom, Airlines
-              etc)
+              I can work in any kind of industry (I have provided solutions for Hospitality, E-Commerce/Marketplace, Banking, Telecom, Airlines etc).
             </li>
             <li>
-              Working on critical projects (I have successfully resurfaced many
-              projects from deep waters)
+              Working on critical projects (I have successfully resurfaced many projects from deep waters)
             </li>
             <li>
-              I have an easy to approach personality but at the same time I am
-              very serious and passionate about my output.
+              I have an easy to approach personality but at the same time I am very serious and passionate about my output.
             </li>
             <li>
-              I always stand with my team to the point of being fiercly
-              defensive about them. At the same time I can be very stern when it
-              comes to maintaining the quality of work.
+              I always stand with my team to the point of being fiercly defensive about them. 
+              At the same time I can be very stern when it comes to maintaining the quality of work.
             </li>
             <li>
-              The most common and rewarding compliment I have always received
-              from my team and my peers is that I always look fresh and
-              energetic whether I leave work 6pm or at 11pm.
+              The most common and rewarding compliment I have always received from my team and my peers is that 
+              I always look fresh and energetic whether I leave work 6pm or at 11pm.
             </li>
           </ul>
         </div>
         <div className="resume-container">
           <a
-            href="/doc/Subroto-Delivery.pdf"
+            href="/doc/Subroto-Mukherjee-PGM.pdf"
             className="center"
             download={true}
           >
@@ -407,7 +399,7 @@ const PortfolioPage: React.FC = () => {
               height="50"
               alt="Download Resume"
             />
-            <span>Click to Download My Resume</span>
+            <span>Download CV</span>
           </a>
         </div>
       </section>

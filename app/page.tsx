@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="home-page page">
       <HeroBanner
-        title="Welcome to Subzworld!"
+        title="24 Years. 5 Industries. One Focus: Engineering Digital Solutions that Works!"
         backgroundImage="/images/banner.webp"
         mobileImage="/images/mobile-banner.webp"
       />
@@ -32,46 +32,27 @@ export default function Home() {
           <h2>Who am I ?</h2>
         </blockquote>
         <p>
-          My name is Subroto, I am from Delhi, India. I am a IT technologist by
-          profession working with{" "}
+          Based in Gurgaon, I lead the Full-Stack and Headless Commerce Delivery
+          across ANZ at {" "}
           <a
             href="https://www.techmahindra.com/"
             target="blank"
             referrerPolicy="no-referrer"
           >
             Tech Mahindra
-          </a>{" "}
-          as a Delivery Lead for Fullstack and Headless Commerce overlooking
-          projects across the EMEA (Europe-Middle East-Asia) region.
+          </a>.{" "}
+          With 24+ years in enterprise IT, I specialize in architecting and executing digital commerce solutions using modern frameworks like Next.js and React. 
         </p>
         <p>
-          I come with a very strong professional background spanning 24 years.
-          During my tenure I have worked and delivered projects for multiple
-          industries including:
+          I’ve led delivery across industries—Airlines, Banking, B2B/B2C Retail, Marketplaces, and Healthcare—for some of the world’s largest brands.
         </p>
-        <ul className="default-list">
-          <li>Airlines</li>
-          <li>E-Commerce (B2B/B2C)</li>
-          <li>Marketplace</li>
-          <li>Banking</li>
-          <li>Healthcare</li>
-          <li>Telecom</li>
-        </ul>
-        ... and many more.
+        
         <div ref={ref}>
           {inView ? (
             <>
               <p className="page-break">
-                Also I got the opportunity to work for multiple esteemed
-                organisations including:
+                I’ve worked with leading firms such as Tech Mahindra, Publicis Sapient, Sopra Steria, and Tata Interactive Services.
               </p>
-              <ul className="default-list">
-                <li>Tech Mahindra</li>
-                <li>Publicis.Sapient</li>
-                <li>Sopra Steria</li>
-                <li>Tata Interactive Services</li>
-              </ul>
-              ... and many more.
               <p className="page-break">
                 Being a nerd I like to work on different technologies and
                 frameworks and keep myself updated with the latest trends in
@@ -79,24 +60,17 @@ export default function Home() {
                 projects using Next.js and React.
               </p>
               <p>
-                Apart from project delivery I also have almost a decade long
-                Pre-Sales experience and have been involved in mutliple critical
-                RFPs.
+                I also possess 10 years of pre-sales expertise, translating business needs into scalable tech solutions and winning enterprise RFPs.
               </p>
               <blockquote>
                 <h2>Hobbies</h2>
               </blockquote>
               <p>
-                Apart from my professional life, I have my hobbies to maintain
-                my sanity. I am an amateur landscape photographer and I love to
-                travel and explore new places (Check my Insta profile for my
-                travelogues). I am also a foodie and love to try different
-                cuisines.
+                Outside work, I unwind with landscape photography and travel and explore new places (Check my Insta profile for my
+                travelogues). Plus, I’m a foodie with a passion for exploring cuisines.
               </p>
               <p>
-                During my free time and also when I am not traveling, I prefer
-                to check out YouTube and other articles related to technology
-                and scientific breakthroughs.
+                In spare time, I also follow tech and science developments on YouTube and specialized blogs.
               </p>
             </>
           ) : (
